@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GoalGrid - 人生目標管理アプリ",
-  description: "8つの人生テーマと具体的行動目標を放射状グリッド形式で美しく表示するアプリ",
+  title: "GoalGrid",
+  description: "8つのテーマと具体的行動目標を放射状グリッド形式で美しく表示するアプリ",
 };
 
 export default function RootLayout({
