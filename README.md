@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GoalGrid - 人生目標管理アプリ
 
-## Getting Started
+🎯 **8つの人生テーマ**と**それぞれに紐づく8つの具体的行動目標**を放射状グリッド形式で美しく表示するアプリです。
 
-First, run the development server:
+## 🛠 技術スタック
+
+- **React** (Next.js App Router構成)
+- **TypeScript**
+- **Tailwind CSS**
+- **Lucide React Icons**
+
+## 🎨 特徴
+
+- **美しいパステル調グラデーション**背景
+- **放射状グリッド形式**での目標表示
+- **レスポンシブデザイン**（モバイル対応）
+- **視覚的な階層構造**で目標を整理
+- **アイコンによる目標分類**
+  - 🎯 数値目標
+  - 🔁 継続目標
+  - 🧠 内面的目標
+  - 🍜 制限・ご褒美
+
+## 🚀 開発サーバーの起動
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# 依存関係のインストール
+pnpm install
+
+# 開発サーバーの起動
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いてアプリケーションを確認してください。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 表示内容
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### メインテーマ
+「この2年で、英語・筋トレ・ソフトウェアスキルを軸に、自分を圧倒的に成長させる」
 
-## Learn More
+### 8つのサブテーマ
+1. **英語** 🌍
+2. **ソフトウェアスキル** 💻
+3. **健康** 🏥
+4. **家族** 👨‍👩‍👧‍👦
+5. **仕事** 💼
+6. **筋トレ** 💪
+7. **心のケア** 🧘
+8. **暮らしと習慣** 🏠
 
-To learn more about Next.js, take a look at the following resources:
+各サブテーマには8つの具体的な行動目標が設定されており、アイコンで分類されています。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 プロジェクト構成
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── globals.css      # パステル調スタイル
+│   ├── layout.tsx       # レイアウト設定
+│   └── page.tsx         # メインページ
+└── components/
+    └── GoalGrid.tsx     # メインコンポーネント
+```
 
-## Deploy on Vercel
+## 📝 最終更新日
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2025/06/22
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+このアプリは完全にハードコーディングされており、状態管理や編集機能は含まれていません。美しい静的表示に特化したデザインです。
